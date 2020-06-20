@@ -1,1 +1,111 @@
-#index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 2</title>
+</head>
+
+<style>
+
+    /* uma boa forma para centralizar seu conteudo na vertical */
+    body {
+        background-image: url(https://i.pinimg.com/564x/6b/b6/2b/6bb62b1fcc71fe8ed4c4697d1163ffca.jpg);
+        background-repeat: no-repeat;
+        background-size: 400pt;
+    }
+
+    .container-principal {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .container-form {
+        background-image: linear-gradient(rgba(222,35,82,.3),rgba(189,49,122,.3), rgba(140,69,142,.3),rgba(89,79,139, .3), rgba(52,79,118,.3),rgba(47,72,88,.3));        height:450px;
+        width: 350px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 1px 1px 4px rgba(0,0,0, .5);
+        text-align: center;;
+    }
+    /* configuração inputs */
+
+    .container-form input[type="text"] {
+        background-color:transparent;
+        border: 0;
+        border-bottom: 1px solid rgba(0,0,0, .5) ;
+        height: 30px;
+        outline: none;
+        transition: 0.4s;
+        color: #000;
+    }
+    .container-form input[type="text"]:hover {
+        border-bottom-color: rgba(222,35,82,.3);
+    }
+    .container-form input[type="text"]:not(:nth-child(2))  {
+        /* background-color: red; */
+        margin-top: 20px
+    }
+
+    .container-form  h2{
+        font-size:1.5rem;font-weight:300;line-height:1.2;
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+    }
+    .container-form h2 img {
+        width: 50px;
+        opacity: 0.6;
+    }
+    .clear-fix {
+        margin-top: 10px;
+    }
+    .clear-fix::after{
+        display:block;
+        clear:both;
+        content:"";   
+    }
+    .clear-fix .select {
+        text-align: left;
+    }
+    .clear-fix .number {
+        text-align: right;
+    }
+    .text-area {
+        background-color: transparent;
+        margin-top: 20px;
+        outline: none;;
+    }
+
+    .container-form input[type="submit"] {
+        background-color: transparent;
+        border: 1px solid rgba(0,0,0, .4);
+        padding: 5px;
+        margin: 5px 0;
+        transition: 0.5s;
+    }
+    .container-form input[type="submit"]:hover {
+        background-color: rgba(0,0,0, .5);
+        border-color: #fff;
+        color: #fff;
+        cursor: pointer;
+
+    }
+
+
+
+</style>
+<body>
+    <div class="container-principal">
+        <div class="container-form">
+            <h2> Faça login para continuar  <br><br> <img src="https://images.vexels.com/media/users/3/128926/isolated/preview/c60c97eba10a56280114b19063d04655-plane-airport-round-icon-by-vexels.png"> </h2>
+            <input type="text" size=30 placeholder="Digite o seu nome">   
+            <input type="text" size=30 placeholder="Digite o seu email">    
+            <input type="text" size=30 placeholder="Digite o seu número"> 
+            <textarea class="text-area" cols="31" rows="5" placeholder="Digite sua mensagem"></textarea> <br>
+
+            <input type="submit"> 
+        </div>
+    </div>
+
+</body>
+</html>
